@@ -1,0 +1,5 @@
+print "Digite seu nome: "
+name = gets.chomp
+print "Digite sua idaade'
+age = gets.chomp
+puts "#{name} tem #{age} anos de idade'
