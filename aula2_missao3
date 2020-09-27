@@ -1,7 +1,9 @@
 print "Digite um número: "
-num1 = gets.chomp
-print "Digite outro número: "
-num2 = gets.chomp
+num1 = gets.chomp.to_i                           # .to_i transforma a string em um número inteiro
+
+print "Digite outro número: "                   # .to_i transforma a string em um número inteiro
+num2 = gets.chomp.to_i
+
 soma = nume1 + num2
 subtracao = num1 - num2
 multiplicacao = num1*num2
