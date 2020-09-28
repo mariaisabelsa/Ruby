@@ -1,0 +1,13 @@
+# Utilizando uma collection do tipo Array, escreva um programa que receba 3 números e no final exiba o resultado de cada um deles elevado a segunda potência.
+
+numeros = []
+n = 0
+while n < 3 do 
+  puts "Digite um número: "
+  numeros[n] = gets.chomp.to_i
+  n+=1
+end
+numeros.map! do |a| 
+ a * 2
+end
+puts " #{numeros}"
