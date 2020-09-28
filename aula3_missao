@@ -10,15 +10,15 @@ loop do
   puts " 4 - Divisão"
   puts " 0 - Sair do programa"
   option = gets.chomp.to_i
-  if option != 0
+  if option >= 1 and option <= 4
     print "Digite o primeiro numero inteiro: "
     num1 = gets.chomp.to_i
     print "Digite o segundo número inteiro: "
     num2 = gets.chomp.to_i
-  else
-    break
   end
   case 
+  when option == 0
+    break
   when option == 1
     soma = num1 + num2
     result = " O resultado da soma entre #{num1} e #{num2} é #{soma}"
@@ -27,11 +27,12 @@ loop do
     result = " O resultado da subtração entre #{num1} e #{num2} é #{subtracao}"
   when option == 3 
     multiplicacao = num1*num2
-    result =" O resultado da subtração entre #{num1} e #{num2} é #{multiplicacao}"
+    result =" O resultado da multiplicação entre #{num1} e #{num2} é #{multiplicacao}"
   when option == 4
     divisao = num1/num2
-    result = " O resultado da subtração entre #{num1} e #{num2} é #{divisao}"
+    result = " O resultado da divisão entre #{num1} e #{num2} é #{divisao}"
   else 
     result = "OPÇÃO INVÁLIDA"
   end
+    system "clear" 
 end 
