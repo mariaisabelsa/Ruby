@@ -6,7 +6,7 @@
 require "cpf_cnpj"
 
 def checkcpf (cpf)
-if CPF.valid?(cpf)
+if CPF.valid?(cpf, strict: true))
   puts "CPF válido"
 else
   puts "CPF inválido"
