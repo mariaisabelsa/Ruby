@@ -1,0 +1,11 @@
+# Crie um programa que possua um método que resolva a potência dado um número base e seu expoente. Estes dois valores devem ser informados pelo usuário.
+
+def potencia
+  puts "Digite a base: "
+  base = gets.chomp.to_i
+  puts "Digite o expoente: "
+  expoente = gets.chomp.to_i
+  potencia = base ** expoente
+  puts "#{base} elevado a #{expoente} é igual a #{potencia}"
+end
+potencia
